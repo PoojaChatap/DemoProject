@@ -32,7 +32,9 @@ public class UserServiceImpl implements UserServiceI {
 
     @Override
     public User getSingleUser(Long userId) {
-        return null;
+        User user = userRepository.findById(userId)
+                .orElseThrow(() ->new RuntimeException("Resource not found on server!!"));
+        return user;
     }
 
     @Override
