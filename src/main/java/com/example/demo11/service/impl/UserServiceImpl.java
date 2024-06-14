@@ -14,7 +14,7 @@ public class UserServiceImpl implements UserServiceI {
     //field dependency injection
 
     @Override
-    public User createUser(User user) {
+    public User createUser(User user){
         User savedUser= userRepository.save(user);
         return savedUser;
     }
