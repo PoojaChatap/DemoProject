@@ -4,9 +4,10 @@ import com.example.demo11.model.User;
 import com.example.demo11.repository.UserRepository;
 import com.example.demo11.service.UserServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class UserServiceImpl implements UserServiceI {
 
     @Autowired
